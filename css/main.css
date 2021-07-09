@@ -110,7 +110,7 @@ main button:hover {
 	height: 300px;
 	width: 300px;
 }
-@media (max-width: 768px) and (max-device-width: 768px) {
+@media (max-width: 768px) {
 	.pictures {
 		display: flex;
 		flex-direction: column;
