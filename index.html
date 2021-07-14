@@ -9,18 +9,18 @@
 
 	<body>
 		<header>
-			<ul class="flex justify-center text-lg">
+			<ul class="flex justify-center text-lg md:text-2xl md:m-10">
 				<li class="p-4"><a class="hover:text-blue-600 transition duration-500 ease-in-out" href="index.html">Home</a></li>
 				<li class="p-4"><a class="hover:text-blue-600 transition duration-500 ease-in-out" href="trending.html">Trending</a></li>
 			</ul>
 		</header>
 		<main class="flex justify-center p-8">
-			<input class="search rounded focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent border border-solid border-red p-3 transition duration-500 ease-in-out" type="text" name="" value="" placeholder="Search for some giphy!" />
-			<button type="button" name="button" class="search-btn rounded hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-800 focus:ring-opacity-50 transition duration-500 ease-in-out bg-blue-600 font-color text-white p-3 ml-1">
+			<input class="search rounded focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent border border-solid border-red p-3 transition duration-500 ease-in-out md:p-6 md:w-2/3" type="text" name="" value="" placeholder="Search for some giphy!" />
+			<button type="button" name="button" class="search-btn rounded hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-800 focus:ring-opacity-50 transition duration-500 ease-in-out bg-blue-600 font-color text-white p-3 ml-1 md:p-5">
 				Search
 			</button>
 		</main>
-		<div class="pictures grid grid-cols-3 md:grid-rows-6 justify-center justify-items-center"></div>
+		<div class="pictures grid grid-cols-3 md:grid-rows-3 md:grid-cols-2 justify-center justify-items-center"></div>
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>

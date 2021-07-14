@@ -27,7 +27,7 @@ body {
 		align-items: center;
 	}
 }
-@media (max-device-width: 750px){
+/* @media (max-device-width: 750px){
 	.pictures, .trending {
 		display: flex;
 		flex-direction: column;
@@ -37,5 +37,10 @@ body {
 		height: 550px;
 		width:550px;
 		padding: 10px;
+		margin-left: 5%;
+		margin-right: 5%;
 	}
-}
+	.search {
+		width: 90%;
+	}
+} */
