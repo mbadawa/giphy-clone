@@ -27,3 +27,15 @@ body {
 		align-items: center;
 	}
 }
+@media (max-device-width: 750px){
+	.pictures, .trending {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.trending img {
+		height: 550px;
+		width:550px;
+		padding: 10px;
+	}
+}
