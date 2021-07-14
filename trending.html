@@ -5,19 +5,20 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Welcome to giphy clone | Trending</title>
-		<link rel="stylesheet" href="/css/main.css" />
+		<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="/css/main.css">
 	</head>
 	<body>
 		<header>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="trending.html">Trending</a></li>
+			<ul class="flex justify-center text-lg">
+				<li class="p-4"><a class="hover:text-blue-600 transition duration-500 ease-in-out" href="index.html">Home</a></li>
+				<li class="p-4"><a class="hover:text-blue-600 transition duration-500 ease-in-out" href="trending.html">Trending</a></li>
 			</ul>
 		</header>
-		<h1>trending now</h1>
+		<h1 class="text-center text-3xl p-8">Trending Now</h1>
 
 		<div class="trending-main">
-			<span class="trending"></span>
+			<span class="trending grid grid-cols-3 md:grid-rows-6 justify-center justify-items-center"></span>
 		</div>
 		<script src="./js/trending.js"></script>
 	</body>

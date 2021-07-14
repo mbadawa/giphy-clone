@@ -8,7 +8,9 @@ function apiRequest() {
 		.then(function (data) {
 			return data.json();
 		})
+
 		.then(function (json) {
+			document.querySelector(".pictures").innerHTML = "";
 			for (let i = 0; i < json.data.length; i++) {
 				var imgPath = json.data[i].images.fixed_height.url;
 				var img = document.createElement("img");

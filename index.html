@@ -3,27 +3,24 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Welcome to giphy clone</title>
-		<link rel="stylesheet" href="/css/main.css" />
+		<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="/css/main.css">
 	</head>
 
 	<body>
 		<header>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="trending.html">Trending</a></li>
+			<ul class="flex justify-center text-lg">
+				<li class="p-4"><a class="hover:text-blue-600 transition duration-500 ease-in-out" href="index.html">Home</a></li>
+				<li class="p-4"><a class="hover:text-blue-600 transition duration-500 ease-in-out" href="trending.html">Trending</a></li>
 			</ul>
 		</header>
-		<main>
-			<input
-				class="search"
-				type="text"
-				name=""
-				value=""
-				placeholder="Search for some giphy!"
-			/>
-			<button type="button" name="button" class="search-btn">Search</button>
+		<main class="flex justify-center p-8">
+			<input class="search rounded focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent border border-solid border-red p-3 transition duration-500 ease-in-out" type="text" name="" value="" placeholder="Search for some giphy!" />
+			<button type="button" name="button" class="search-btn rounded hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-800 focus:ring-opacity-50 transition duration-500 ease-in-out bg-blue-600 font-color text-white p-3 ml-1">
+				Search
+			</button>
 		</main>
-		<div class="pictures"></div>
+		<div class="pictures grid grid-cols-3 md:grid-rows-6 justify-center justify-items-center"></div>
 		<script type="text/javascript" src="/js/main.js"></script>
 	</body>
 </html>
